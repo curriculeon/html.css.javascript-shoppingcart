@@ -13,6 +13,15 @@
 
 * Your task is to design and implement the classes that represent the products, the shopping cart, and the checkout process in the billing system.
 
+#### Additional Requirements
+* The `addProduct` method should update the quantity of the product in the shopping cart.
+* The `removeProduct` method should update the quantity of the product in the shopping cart.
+* The `applyDiscounts` method should apply a 10% discount if the total cost of the products in the shopping cart is over $100.
+* The `generateInvoice` method should return an object with the following properties:
+  * `totalCost`: the total cost of the products in the shopping cart before any discounts are applied
+  * `discount`: the amount of the discount applied
+  * `finalCost`: the total cost of the products in the shopping cart after the discount is applied
+
 
 
 
