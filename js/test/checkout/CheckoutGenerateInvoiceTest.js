@@ -1,6 +1,6 @@
 class CheckoutGenerateInvoiceTest {
     // Tests the generateInvoice method of the Checkout class with different values
-    testGenerateInvoice() {
+    test() {
       this.testInvoiceWithEmptyShoppingCart();
       this.testInvoiceWithNonEmptyShoppingCart();
       this.testInvoiceWithDiscounts();

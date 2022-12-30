@@ -1,6 +1,6 @@
 class ProductConstructorTest {
   // Tests the constructor of the Product class with different values
-  testConstructor() {
+  test() {
     this.testConstructorWithDefaultValues();
     this.testConstructorWithDifferentValues();
     this.testConstructorWithStringValues();

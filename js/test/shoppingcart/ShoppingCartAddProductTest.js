@@ -1,6 +1,6 @@
 class ShoppingCartAddProductTest {
     // Tests the addProduct method of the ShoppingCart class with different values
-    testAddProduct() {
+    test() {
       this.testAddProductToEmptyCart();
       this.testAddProductToNonEmptyCart();
       this.testAddProductToFullCart();

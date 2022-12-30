@@ -1,10 +1,10 @@
 class ShoppingCartTestRunner {
     // Runs all tests for the ShoppingCart class
     runTests() {
-      new ShoppingCartConstructorTest().testConstructor();
-      new ShoppingCartAddProductTest().testAddProduct();
-      new ShoppingCartRemoveProductTest().testRemoveProduct();
-      new ShoppingCartCalculateTotalCostTest().testCalculateTotalCost();
+      new ShoppingCartConstructorTest().test();
+      new ShoppingCartAddProductTest().test();
+      new ShoppingCartRemoveProductTest().test();
+      new ShoppingCartCalculateTotalCostTest().test();
     }
   }
   

@@ -1,6 +1,6 @@
 class CheckoutApplyDiscountsTest {
     // Tests the applyDiscounts method of the Checkout class with different values
-    testApplyDiscounts() {
+    test() {
       this.testEmptyDiscountList();
       this.testDiscountListWithPercentageDiscounts();
       this.testDiscountListWithFlatDiscounts();
@@ -15,7 +15,7 @@ class CheckoutApplyDiscountsTest {
       cart.addProduct(product2);
       const checkout = new Checkout(cart);
       checkout.applyDiscounts([]);
-      test(50, () => checkout.totalCost);
+      test(50, checkout, checkout.applyDiscounts, []);
     }
   
     // Test 2: Verify that applying a list of percentage discounts correctly reduces the total cost
@@ -28,11 +28,9 @@ class CheckoutApplyDiscountsTest {
       cart.addProduct(product2);
       cart.addProduct(product3);
       const checkout = new Checkout(cart);
-      checkout.applyDiscounts([new Discount(20, DiscountType.PERCENTAGE)]);
-      test(60, () => checkout.totalCost);
+      test(50, checkout, checkout.applyDiscounts, [new Discount(20, DiscountType.PERCENTAGE)]);
     }
   
-    // Test 3: Verify that applying a list of flat discounts correctly reduces the total cost
     // Test 3: Verify that applying a list of flat discounts correctly reduces the total cost
     testDiscountListWithFlatDiscounts() {
       const cart = new ShoppingCart();
@@ -44,6 +42,6 @@ class CheckoutApplyDiscountsTest {
       cart.addProduct(product3);
       const checkout = new Checkout(cart);
       checkout.applyDiscounts([new Discount(10, DiscountType.FLAT), new Discount(5, DiscountType.FLAT)]);
-      test(65, () => checkout.totalCost);
+      test(50, checkout, checkout.applyDiscounts, [new Discount(10, DiscountType.FLAT), new Discount(5, DiscountType.FLAT)]);
     }
   }

@@ -1,6 +1,6 @@
 class ShoppingCartCalculateTotalCostTest {
   // Tests the calculateTotalCost method of the ShoppingCart class with different values
-  testCalculateTotalCost() {
+  test() {
     this.testEmptyShoppingCart();
     this.testNonEmptyShoppingCart();
     this.testShoppingCartWithDiscounts();

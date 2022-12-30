@@ -1,8 +1,9 @@
 class CheckoutTestRunner {
   // Runs all tests for the Checkout class
   runTests() {
-    new CheckoutGenerateInvoiceTest().testGenerateInvoice();
-    new CheckoutApplyDiscountsTest().testApplyDiscounts();
+    new CheckoutConstructorTest().test()
+    new CheckoutGenerateInvoiceTest().test();
+    new CheckoutApplyDiscountsTest().test();
   }
 }
 

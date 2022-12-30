@@ -1,6 +1,6 @@
 class ShoppingCartRemoveProductTest {
   // Tests the removeProduct method of the ShoppingCart class with different values
-  testRemoveProduct() {
+  test() {
     this.testRemoveProductFromEmptyCart();
     this.testRemoveProductFromNonEmptyCart();
     this.testRemoveProductThatDoesNotExist();

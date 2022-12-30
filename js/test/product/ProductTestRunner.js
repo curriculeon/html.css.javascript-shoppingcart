@@ -1,7 +1,7 @@
 class ProductTestRunner {
     // Runs all tests for the Product class
     runTests() {
-      new ProductConstructorTest().testConstructor();
+      new ProductConstructorTest().test();
     }
 }
 
